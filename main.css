@@ -1,0 +1,43 @@
+p > b{
+	color:blue;
+}
+p > em{
+	color:red;
+}
+
+ul li.list2 ~ li{
+	color: blue;
+}
+abbr[title]{
+	color: green;
+}
+div[class^="box"]{
+	background: yellow;
+}
+input:invalid{
+	border-color: red;
+}	
+input:valid{
+	border-color: green;
+}
+input:valid + span::before{
+	content: '✓';
+	color: green;
+}
+input:invalid + span::before{
+	content: '❌';
+	color: red;
+}
+input:in-range{
+	background-color: green;
+}
+input:out-of-range{
+	background-color: red;
+}
+.bordertest{
+	width: 250px;
+	height: 250px;
+	background-color: lime;
+	border-style: solid;
+	margin: 50px;
+}
