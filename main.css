@@ -40,4 +40,31 @@ input:out-of-range{
 	background-color: lime;
 	border-style: solid;
 	margin: 50px;
+	outline: 5px solid green;
+	outline-offset: 5px;
+}
+body{
+	font-family: Arial;
+}
+.tr{
+	text-transform: uppercase;
+	color: white;
+}
+body{
+	background-image: url(w3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.w3_d{
+	width: 500px;
+	height: 200px;
+	padding: 40px;
+	border: 10px dashed yellow;
+	background-repeat: no-repeat;
+	background-image:linear-gradient(to right, transparent, gray) ,url(w3_deneme.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-origin: border-box;
 }
