@@ -20,11 +20,11 @@ input:invalid{
 input:valid{
 	border-color: green;
 }
-input:valid + span::before{
+input:valid + .sign::before{
 	content: '✓';
 	color: green;
 }
-input:invalid + span::before{
+input:invalid + .sign::before{
 	content: '❌';
 	color: red;
 }
@@ -67,4 +67,43 @@ body{
 	background-position: center;
 	background-size: cover;
 	background-origin: border-box;
+}
+
+.cb3{
+	display:inline-block;
+	width: 80px;
+	height: 30px;
+	border-radius: 40px;
+	background-color: #ddd;
+	position: relative;
+	cursor: pointer;
+	transition:500ms background-color;
+}
+.check-btn{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: tomato;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+/*.cb2:invalid + .cb4{
+	content: '❌';
+	color: red;
+}
+.cb2:valid + .cb4{
+	content: '✓';
+	color: green;
+}*/
+.cb2:checked + .cb3{
+	background-color: tomato;
+}
+.cb2:checked + .cb3 .check-btn{
+	transition: 500ms left;
+	left: 50px;
+	background-color: white;
+}
+.cb2{
+	display: none;
 }
